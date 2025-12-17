@@ -1,0 +1,103 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>OH MY GOTTO 🎗</legend>
+                <table border="1" width="80%" cellspacing="0" cellpadding="10" align="center">
+                    <tr>
+                        <th colspan="3">PERSON PROFILE</th>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input id="name" type="text" name="name"></td>
+                        <td>
+                            <div id="blankName" style="color:red;"></div>
+                            <div id="lengthName" style="color:red;"></div>
+                            <div id="startName" style="color:red;"></div>
+                            <div id="containtName" style="color:red;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input id="email" type="email" name="email" required></td>
+                        <td>
+                            <div id="blankEmail" style="color:red;"></div>
+                            <div id="invalidEmail" style="color:red;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="Gender" value="Male"> Male
+                            <input type="radio" name="Gender"value="Female"> Female
+                            <input type="radio" name="Gender"value="Other"> Other
+                        </td>
+                        <td>
+                            <div id="blankGender" style="color:red;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td>
+                            <input id="day" type="number" placeholder="Day" name="dd"> / <input id="month" placeholder="Month" type="number" name="mm"> / <input id="year" type="number" name="yyyy" placeholder="Year"> <i>(dd/mm/yyyy)</i>
+                        </td>
+                        <td>
+                            <div id="blankDOB" style="color:red;"></div>
+                            <div id="invalidDOB" style="color:red;"></div>
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td>Blood Group</td>
+                        <td>
+                            <select id="bloodGroup" name="blood_group">
+                                <option value="">Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div id="blankBlood" style="color:red;"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Degree
+                        </td>
+                        <td>
+                            <input type="checkbox" id="SSC" name="degree" value="SSC">
+                            <label for="SSC">SSC</label>
+                            <input type="checkbox" id="HSC" name="degree" value="HSC">
+                            <label for="HSC">HSC</label>
+                            <input type="checkbox" id="BSc." name="degree" value="BSc.">
+                            <label for="BSc.">BSc.</label>
+                            <input type="checkbox" id="MSc." name="degree" value="MSc.">
+                            <label for="MSc.">MSc.</label>
+                        </td>
+                        <td>
+                            <div id="blankDegree" style="color:red;"></div>                            
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td colspan="3" align="middle">
+                            <input id="submit" type="button" value="Save">
+                            <input id="reset" type="button" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <div id="output"></div>           
+            </fieldset>
+        </form>
+        <script src="Form.js"></script>
+    </body>
+</html>

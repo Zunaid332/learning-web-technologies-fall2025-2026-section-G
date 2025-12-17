@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+        <title>Profile Picture Form</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Profile Picture</legend>
+                <legend>User ID</legend>
+                <input type="number" id="userId" name="userId">
+                <br>
+                <label>Picture</label> <input type="file" id="profilePicture" name="profilePicture" accept="image/jpeg,image/png,image/jpg">
+                <hr>
+                <div id="blankID" style="color:red;"></div>
+                <div id="blankPP" style="color:red;"></div>
+                <input id="btn" type="button" value="Submit">
+            </fieldset> 
+            <br>
+            <br>
+            <div id="output"></div>           
+        </form>
+        <script src="PP.js"></script>
+    </body>
+</html>

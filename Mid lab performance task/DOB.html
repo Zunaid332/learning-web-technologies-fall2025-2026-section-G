@@ -1,0 +1,43 @@
+<html>
+    <head></head>
+        <title>Date of Birth Form</title>
+    </head>
+    <body>
+        <form>
+        <fieldset>
+            <legend>Date of Birth</legend>
+
+                <table>
+                <tr>
+                    <td align="center">dd</td>
+                    <td> </td>
+                    <td align="center">mm</td>
+                    <td> </td>
+                    <td align="center">yyyy</td>
+                </tr>
+
+                <tr>
+                    <td><input id="day" type="number"></td>
+                    <td>/</td>
+                    <td><input id="month" type="number"></td>
+                    <td>/</td>
+                    <td><input id="year" type="number"></td>
+                </tr>
+                </table>
+                <hr>
+                <div id="blankDOB" style="color:red;"></div>
+                <div id="invalidDOB" style="color:red;"></div>
+                <input id="btn" type="button" value="Submit">
+        </fieldset>
+
+            <br>
+            <br>
+            <div id="output"></div>
+
+        </form>
+
+        <script src="DOB.js"></script>
+
+    </body>
+</html>
+

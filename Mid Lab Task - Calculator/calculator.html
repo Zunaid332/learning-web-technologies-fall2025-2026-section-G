@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modular Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <input type="text" id="display" disabled>
+
+    <div class="btn-grid">
+        <button onclick="pressNumber('7')">7</button>
+        <button onclick="pressNumber('8')">8</button>
+        <button onclick="pressNumber('9')">9</button>
+        <button onclick="pressOperator('/')">/</button>
+
+        <button onclick="pressNumber('4')">4</button>
+        <button onclick="pressNumber('5')">5</button>
+        <button onclick="pressNumber('6')">6</button>
+        <button onclick="pressOperator('*')">*</button>
+
+        <button onclick="pressNumber('1')">1</button>
+        <button onclick="pressNumber('2')">2</button>
+        <button onclick="pressNumber('3')">3</button>
+        <button onclick="pressOperator('-')">-</button>
+
+        <button onclick="pressNumber('0')">0</button>
+        <button onclick="percentage()">%</button>
+        <button class="equals" onclick="calculate()">=</button>
+        <button onclick="pressOperator('+')">+</button>
+
+        <button class="clear" onclick="clearDisplay()">C</button>
+    </div>
+</div>
+
+<script src="frame.js"></script>
+<script src="addition.js"></script>
+<script src="subtraction.js"></script>
+<script src="multiplication.js"></script>
+<script src="division.js"></script>
+<script src="clear.js"></script>
+<script src="percentage.js"></script>
+
+</body>
+</html>
